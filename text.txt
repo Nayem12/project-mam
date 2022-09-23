@@ -1,0 +1,23 @@
+<?php
+
+$con = mysqli_connect('localhost','root');
+
+if ($con) {
+    echo "Registration Successful";
+}else {
+    echo "No Connection";
+}
+
+mysqli_select_db($con, 'info');
+
+$Name = $_POST['Name'];
+$Number = $_POST['Number'];
+$Address = $_POST['Address'];
+$Area = $_POST['Area'];
+
+$query = "INSERT INTO `details`(`Name`, `Number`, `Address`, `Area`)
+VALUES ('$Name','$Number','$Address','$Area')";
+
+mysqli_query($con, $query);
+
+?>

@@ -1,7 +1,7 @@
 let dataSet;
 let cart = [];
 
-fetch("../data.json")
+fetch("js/data.json")
   .then((res) => res.json())
   .then((data) => {
     dataSet = data;
@@ -9,7 +9,7 @@ fetch("../data.json")
   });
 
 const phoneDatas = async () => {
-  const res = await fetch("../data.json");
+  const res = await fetch("data.json");
   const data = await res.json();
   displayData(data);
 };
@@ -58,7 +58,7 @@ function displayData(data) {
         onclick="handleBuyNow('${id}')"
           class="btn btn-outline btn-secondary w-[45%] mx-auto block"
         >
-          <i class="fa-solid fa-bag-shopping mr-2"></i>Buy Now
+          <i class="fa-solid fa-bag-shopping mr-2"></i>Add TO Cart
         </button>
       </div>
   </div>

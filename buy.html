@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <form action="register.php" method="POST" class="form container row g-3 p-3">
+
+    <div class="col-12 m-2">
+
+      <input type="text" class="form-control" id="inputAddress" name="Name" placeholder="Enter Your Name" required>
+    </div>
+    <div class="col-md-6 m-2">
+
+      <input type="text" class="form-control" id="inputNumber" name="Number" placeholder="Enter Your Number" required>
+    </div>
+    <div class="col-12 m-2 ">
+
+      <input type="text" class="form-control" id="inputAddress2" name="Address" placeholder="Enter Your Address">
+    </div>
+    <div class="col-12 m-2">
+
+      <select id="inputState" class="form-select" name="Area" required>
+        <option selected>Choose your city</option>
+        <option>Dhaka</option>
+        <option>Khulna</option>
+        <option>Chittagong</option>
+        <option>Rajshahi</option>
+        <option>Rangpur</option>
+        <option>Sylhet</option>
+        <option>Barisal</option>
+
+      </select>
+    </div>
+    <div class="col-12 m-2">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label fw-semibold" for="gridCheck">
+          I have read and agreed to the<a class="text-decoration-none fw-semibold" href=""> terms
+            and conditions</a>
+        </label>
+      </div>
+    </div>
+
+    <div class="modal-action">
+      <input action="register.php" method="POST" type="submit" value="submit">
+    </div>
+  </form>
+</body>
+
+</html>
